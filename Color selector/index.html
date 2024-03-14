@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>RGB Color Selector</title>
+</head>
+<body>
+    <div class="color-square" id="colorSquare">
+        <h1>RGB color selector</h1>
+    </div>
+
+    <div class="slidecontainer">
+        <div class="slider-container">
+            <p>RED</p>
+            <input type="range" min="0" max="255" value="128" class="slider" id="sliderRed">
+            <p id="demo1">128</p>
+        </div>
+        <div class="slider-container">
+            <p>GREEN</p>
+            <input type="range" min="0" max="255" value="128" class="slider" id="sliderGreen">
+            <p id="demo2">128</p>
+        </div>
+        <div class="slider-container">
+            <p>BLUE</p>
+            <input type="range" min="0" max="255" value="128" class="slider" id="sliderBlue">
+            <p id="demo3">128</p>
+        </div>
+    </div>
+
+    <script>
+        const sliders = document.querySelectorAll(".slider");
+        const outputs = document.querySelectorAll("[id^='demo']");
+
+        // Update the value display when any slider is moved
+        sliders.forEach((slider, index) => {
+            slider.addEventListener("input", function() {
+                outputs[index].innerHTML = this.value;
+            });
+        });
+        const colorSquare = document.getElementById("colorSquare");
+
+        // Update the color square when any slider is moved
+        sliders.forEach((slider, index) => {
+            slider.addEventListener("input", function() {
+                const red = document.getElementById("sliderRed").value;
+                const green = document.getElementById("sliderGreen").value;
+                const blue = document.getElementById("sliderBlue").value;
+
+                // Set the background color of the square
+                colorSquare.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+            });
+        });
+    </script>
+</body>
+</html>
