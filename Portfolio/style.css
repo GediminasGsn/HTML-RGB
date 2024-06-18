@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: #003333;
+    color: #fff;
+    padding: 2rem;
+    display: flex; /* Make header elements appear side-by-side */
+    justify-content: space-between; /* Align items to opposite sides */
+    align-items: center; /* Vertically center items within header */
+    padding: 1rem; /* Add some padding to the header */
+  }
+  
+  .name {
+    font-size: 1.5rem; /* Adjust font size as needed */
+  }
+  
+  nav {
+    /* Move navigation element to the right side */
+    margin-left: auto;
+  }
+
+button {
+    background-color: #CCCC00;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;  
+  }
+.intro {
+    text-align: center;
+    padding: 2rem;
+}
+.intro img {
+    border-radius: 50%;
+    max-width: 200px;
+    height: auto;
+}
+.about {
+    padding: 2rem;
+} 
+footer {
+    background-color: #003333;
+    color: #fff;
+    padding: 2rem;
+    text-align: right;
+}
+.centered {
+    text-align: center;
+}
+  .container {
+    display: flex; /* Make elements appear side-by-side */
+}
+  
+  .container img {
+    float: left;
+    margin-right: 2rem;
+}
+  
+  .text-content {
+    flex: 1;
+}
