@@ -10,7 +10,7 @@ body {
     background-color: #003333;
     color: #fff;
     padding: 2rem;
-    display: flex; /* Make header elements appear side-by-side */
+    display: flex; /*  aMake header elements appear side-by-side */
     justify-content: space-between; /* Align items to opposite sides */
     align-items: center; /* Vertically center items within header */
     padding: 1rem; /* Add some padding to the header */
