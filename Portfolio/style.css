@@ -11,11 +11,11 @@ body {
     justify-content: space-between; /* Align items to opposite sides */
     align-items: center; /* Vertically center items within header */
     padding: 1rem; /* Add some padding to the header */
+    
   }
-  
   .name {
     font-family: "Roboto Slab", serif;
-    font-size: 1.5rem; /* Adjust font size as needed */
+     font-size: 17px; 
   }
   
   nav {
@@ -31,49 +31,43 @@ button {
     padding: 0.5rem 1rem;
     cursor: pointer;  
   }
-.intro h1 {
-    text-align: center;
-    padding: 2rem;
-}
-.intro img {
+.photo img {
     border-radius: 50%;
     max-width: 200px;
     height: auto;
 }
-.about {
-    padding: 2rem;
+.photo {
+  display: flex;
+  float: left;
 } 
-footer {
-    background-color: #003333;
-    color: #fff;
-    padding: 2rem;
-    text-align: right;
-}
-.centered {
-    text-align: center;
-}
-  .container {
-    display: flex; /* Make elements appear side-by-side */
-}
-  
-  .container img {
-    float: left;
-    margin-right: 15px;
-  
-}
-  
   .text-content {
     flex: 1;
+    float: right
 }
-
 .intro-content{
   margin: 150px auto;
   width:70%;
+  float: center;
 }
 .text-conten h1 {
   font-size: 42%;
+  margin: 0;
+  text-align: left;
 
 }
 .text-conten p {
-font-size: 16px;
+  font-size: 16px;
+}
+.about {
+  float: center;
+  padding: 2rem;
+} 
+.about h2 {
+  text-align: center;
+}
+footer {
+  background-color: #003333;
+  color: #fff;
+  padding: 2rem;
+  text-align: right;
 }
